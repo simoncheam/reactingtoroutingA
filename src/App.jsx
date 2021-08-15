@@ -35,12 +35,13 @@ const App = () => {
 
    {/* People component */}
                 <Route exact path = "/People">
+                <h1>People Page</h1>
                     <People />
                 </Route>
 
                 <Route exact path = "/People/:id">
+                    <h1>People Detail Page</h1>
                     <PeopleDetail /> 
-                    <h1>People Details</h1>
                     
                 </Route>
     

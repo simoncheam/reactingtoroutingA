@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import PeopleCard from "../components/PeopleCard";
 import {useParams } from 'react-router-dom';
 import {Link} from 'react-router-dom'
+import PeopleCardDetail from '../components/PeopleCardDetail';
 
 const People = () => {
 
@@ -25,8 +26,10 @@ const People = () => {
             {people.map(people => (
 
                     <>
+                    {/* Default = peoplecard  */}
+                <PeopleCard pokemon = {people} isPreview /> 
+                {/* <PeopleCardDetail  /> */}
 
-                <PeopleCard pokemon = {people} isPreview />
 
                 <li key ={`person-item-${people.name}`} className="list-group-item">
                     {/* {people.id} */}
