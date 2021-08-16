@@ -11,7 +11,7 @@ const People = () => {
 
     useEffect(() => {
 
-        fetch('https://ghibliapi.herokuapp.com/people')
+        fetch(`https://ghibliapi.herokuapp.com/people`)
         .then(res => res.json()) //parse to JSON
         .then(people => setPeople(people))  //map through people to create bootstrap card
 
@@ -26,14 +26,12 @@ const People = () => {
             {people.map(people => (
 
                     <>
-                    {/* Default = peoplecard  */}
+            
                 <PeopleCard pokemon = {people} isPreview /> 
-                {/* <PeopleCardDetail  /> */}
+            
 
 
-                <li key ={`person-item-${people.name}`} className="list-group-item">
-                    {/* {people.id} */}
-                </li>
+                <li key ={`person-item-${people.name}`} className="list-group-item"></li>
 
         
                 </>
@@ -41,9 +39,7 @@ const People = () => {
                 
             ))};
 
-            {/* <>
-            <Link to={`/People/${people.id}`} className="btn btn-primary"> Read Profile</Link>
-            </> */}
+           
 
         </div>
 

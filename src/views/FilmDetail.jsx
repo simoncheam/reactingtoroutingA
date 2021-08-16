@@ -1,30 +1,36 @@
 import React from 'react';
 import {useEffect, useState} from 'react';
-import PeopleCardDetail from "../components/PeopleCardDetail";
-//import PeopleCard from "../components/PeopleCard";
+import FilmCardDetail from "../components/FilmCardDetail";
 import {useParams } from 'react-router-dom';
 
-const PeopleDetail = () => {
+
+
+const FilmDetail = () => {
     
     const {id } = useParams();
-    const[people, setPeople] = useState([]);
+    const[film, setFilm] = useState([]);
 
-    console.log(id);
+    
 
     useEffect(() => {
 
-        fetch(`https://ghibliapi.herokuapp.com/people/${id}`)
+        fetch(`https://ghibliapi.herokuapp.com/films/${id}`)
         .then(res => res.json()) //parse to JSON
-        .then(people => setPeople(people))  //map through people to create bootstrap card
+        .then(film => setFilm(film))  //map through people to create bootstrap card
 
     }, []); 
     
    //const { name, gender, age, eye_color, hair_color, url} = people
     
+       
+        console.log(id)
+       
+
     return (
+
         <div>
                 <>
-                <PeopleCardDetail /> 
+                <FilmCardDetail /> 
                 </>
 
           
@@ -34,4 +40,4 @@ const PeopleDetail = () => {
     );
 };
 
-export default PeopleDetail;
+export default FilmDetail;

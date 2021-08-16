@@ -3,6 +3,7 @@ import {BrowserRouter, Switch, Route, useEffect} from 'react-router-dom';
 import Films from './views/Films';
 import People from './views/People';
 import PeopleDetail from './views/PeopleDetail';
+import FilmDetail from './views/FilmDetail';
 
 import Home from './views/Home';
 
@@ -29,9 +30,17 @@ const App = () => {
             <Switch>
 
     {/* Films component */}
-                <Route exact path = "/Films">
+                <Route exact path = "/films">
                     <Films />
                 </Route>
+
+                <Route exact path = "/films/:id">
+                    <h1>Film Detail Page</h1>
+                    <FilmDetail /> 
+                    
+                </Route>
+
+
 
    {/* People component */}
                 <Route exact path = "/People">
