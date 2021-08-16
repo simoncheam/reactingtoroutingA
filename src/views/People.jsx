@@ -22,22 +22,22 @@ const People = () => {
 
         <div>
 
-            Welcome to People~!
+        
             {people.map(people => (
 
-                    <>
-            
+                    
+                <>
                 <PeopleCard pokemon = {people} isPreview /> 
             
 
 
                 <li key ={`person-item-${people.name}`} className="list-group-item"></li>
-
-        
                 </>
+        
                 
                 
-            ))};
+                
+            ))}
 
            
 

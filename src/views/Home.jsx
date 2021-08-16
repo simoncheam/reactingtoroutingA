@@ -9,8 +9,7 @@ const Home = () => {
   return (
 
     <div>
-        Welcome to Home...
-        
+                
             <>
             <HomeCard />   
             </>

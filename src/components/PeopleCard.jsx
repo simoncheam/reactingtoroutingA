@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 const PeopleCard = ({pokemon}) => {
 
-    const {id, name, url} = pokemon
+    const {id, name} = pokemon
     
         return (
     

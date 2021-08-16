@@ -1,7 +1,6 @@
 import React from 'react';
 import {useEffect, useState} from 'react';
 import PeopleCardDetail from "../components/PeopleCardDetail";
-//import PeopleCard from "../components/PeopleCard";
 import {useParams } from 'react-router-dom';
 
 const PeopleDetail = () => {
@@ -9,7 +8,7 @@ const PeopleDetail = () => {
     const {id } = useParams();
     const[people, setPeople] = useState([]);
 
-    console.log(id);
+    console.log(`Want to receive content from me on how to increase your email profits along with the unusual lessons I’ve learned from developing over $5 million worth of products and processes?\n\nGo to simoncheam.com and get your Funnel Repair Checklist so you can uncover hidden profits without doing more work.`)
 
     useEffect(() => {
 

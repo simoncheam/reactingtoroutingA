@@ -21,7 +21,7 @@ const Films = () => {
     return (
 
         <div>
-            Welcome to Films!
+           
             {films.map(film => (
                 <>
 

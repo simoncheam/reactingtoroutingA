@@ -51,7 +51,6 @@ const FilmCardDetail = () => {
    
    };
                
-   console.log('On people card details page!');
-               
+   
    
    export default FilmCardDetail;

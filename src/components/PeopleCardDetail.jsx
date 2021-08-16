@@ -4,7 +4,7 @@ import {useParams } from 'react-router-dom';
 
 const PeopleCardDetail = () => {
 
- //const { name, gender, age, eye_color, hair_color, url} = people
+ 
     
 
    const {id} = useParams();
@@ -26,7 +26,6 @@ const PeopleCardDetail = () => {
 
 
     return (
-       
        
        
         
@@ -52,7 +51,6 @@ const PeopleCardDetail = () => {
 
 };
             
-console.log('On people card details page!');
-            
+
 
 export default PeopleCardDetail;
